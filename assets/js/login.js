@@ -5935,7 +5935,7 @@
                         var n = document.createElement("script");
                         n.setAttribute(
                           "src",
-                          "/assets/js/logout-global-func.js?ver=" + Date.now()
+                          "assets/js/logout-global-func.js?ver=" + Date.now()
                         ),
                           (n.onload = function () {
                             if (window._appMoneyForLogout === k)
@@ -7974,7 +7974,7 @@
                         86400
                       )
                     )),
-                  void window.location.replace("/apply?lry=1&" + i.a.param(y))
+                  void window.location.replace("/albert/apply?lry=1&" + i.a.param(y))
                 );
               }
               if (g.shouldTryAgain) return (g.shouldTryAgain = !1), v();
@@ -19531,7 +19531,7 @@
                 } else
                   "error" === t.result
                     ? (location.href =
-                        "/apply?requested_amount=" + o + u + l + a)
+                        "/albert/apply?requested_amount=" + o + u + l + a)
                     : (n.$submitBtn().html(r),
                       alert(
                         "Invalid response from server. Please try again later."
@@ -19561,7 +19561,7 @@
                 );
               })
               .join("&"),
-            u = "/apply?manual=1&",
+            u = "/albert/apply?manual=1&",
             h = l.a.getVariantData(l.a.NAMES.AB_TEST_NEO_WS_WL, "form");
           null !== h &&
             ((u +=

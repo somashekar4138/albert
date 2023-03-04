@@ -833,7 +833,7 @@
                         var n = document.createElement("script");
                         n.setAttribute(
                           "src",
-                          "/assets/js/logout-global-func.js?ver=" + Date.now()
+                          "assets/js/logout-global-func.js?ver=" + Date.now()
                         ),
                           (n.onload = function () {
                             if (window._appMoneyForLogout === D)
@@ -2872,7 +2872,7 @@
                         86400
                       )
                     )),
-                  void window.location.replace("/apply?lry=1&" + o.a.param(x))
+                  void window.location.replace("/albert/apply?lry=1&" + o.a.param(x))
                 );
               }
               if (g.shouldTryAgain) return (g.shouldTryAgain = !1), w();
